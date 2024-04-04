@@ -1,0 +1,21 @@
+<html>
+  <script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DGC000004wYil',
+				'Chat_Web',
+				'https://self-6ae-dev-ed.develop.my.site.com/ESWChatWeb1712055458854',
+				{
+					scrt2URL: 'https://self-6ae-dev-ed.develop.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://self-6ae-dev-ed.develop.my.site.com/ESWChatWeb1712055458854/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+</html>
